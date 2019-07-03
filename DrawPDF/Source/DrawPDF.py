@@ -9,6 +9,8 @@ class DrawPDF():
         self.root.title('Draw PDF Graph')
 
         self._ConstructWidgets()
+    def startGUI(self):
+        self.root.mainloop()
     def _ConstructWidgets(self):
         # Tab 컨트롤
         tabControl = ttk.Notebook(self.root)
@@ -30,24 +32,23 @@ class DrawPDF():
         #tk.Label(self.mighty, text='적용').grid(row=0, column=2)
 
         #text Box 평균 받기
-        self.tmpMean = tk.StringVar()
-        self.txtMean = ttk.Entry(mighty,textvariable=self.tmpMean)
-        self.txtMean.grid(row  = 1, column = 0)
+        tmpMean = tk.StringVar()
+        txtMean = ttk.Entry(mighty,textvariable=tmpMean)
+        txtMean.grid(row  = 1, column = 0)
         #text Box 표준편차 받기
-        self.tmpStd = tk.StringVar()
-        self.txtStd = ttk.Entry(mighty,textvariable=self.tmpStd)
-        self.txtStd.grid(row  = 1, column = 1)
+        tmpStd = tk.StringVar()
+        txtStd = ttk.Entry(mighty,textvariable=tmpStd)
+        txtStd.grid(row  = 1, column = 1)
 
         def _buttonAction():
-            mean = self.tmpMean.get()
-            std = self.tmpMean.get()
+            mean = tmpMean.get()
+            std = tmpStd.get()
             txt = '입력값! >> \n평균 : {m}\n표준편차 : {s}'.format(m=mean,s=std)
-            self.tmpInput.set(txt)
+            tmpInput.set(txt)
 
 
         #button 적용
-        self.btApply = tk.Button(mighty,text='적용!!',command = _buttonAction)
-        self.btApply.grid(row=1,column=2)
+        tk.Button(mighty,text='적용!!',command = _buttonAction).grid(row=1,column=2)
 
 
         #Combo Box
@@ -55,15 +56,14 @@ class DrawPDF():
         #self.
 
         #Label
-        self.tmpInput = tk.StringVar()
-        self.tmpInput.set('입력값 >>')
-        self.inputLabel = tk.Label(mighty,textvariable=self.tmpInput)
-        self.inputLabel.grid(column = 0,row = 2,columnspan = 3)
+        tmpInput = tk.StringVar()
+        tmpInput.set('입력값 >>')
+        tk.Label(mighty,textvariable=tmpInput).grid(column = 0,row = 2,columnspan = 3)
 
 
         #그림영역 확보
-        self.picture = ttk.LabelFrame(tab1,text='picture')
-        self.picture.grid(row=1,column =0, padx = 5, pady = 5)
+        picture = ttk.LabelFrame(tab1,text='picture')
+        picture.grid(row=1,column =0, padx = 5, pady = 5)
         #Canvas
         '''
         self.fig = Figure(figsize=[5,5])
@@ -75,4 +75,4 @@ class DrawPDF():
         '''
 if __name__ =='__main__':
     gui = DrawPDF()
-    gui.root.mainloop()
+    gui.startGUI()

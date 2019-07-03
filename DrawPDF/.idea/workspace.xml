@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/DrawPDF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+            <state relative-caret-position="114">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Anaconda3/Lib/tkinter/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52212">
-              <caret line="2751" column="43" selection-start-line="2751" selection-start-column="43" selection-end-line="2751" selection-end-column="43" />
+            <state relative-caret-position="52269">
+              <caret line="2754" column="43" selection-start-line="2754" selection-start-column="43" selection-end-line="2754" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -188,8 +188,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Source/DrawPDF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+        <state relative-caret-position="114">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -198,8 +198,8 @@
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52212">
-          <caret line="2751" column="43" selection-start-line="2751" selection-start-column="43" selection-end-line="2751" selection-end-column="43" />
+        <state relative-caret-position="52269">
+          <caret line="2754" column="43" selection-start-line="2754" selection-start-column="43" selection-end-line="2754" selection-end-column="43" />
         </state>
       </provider>
     </entry>
